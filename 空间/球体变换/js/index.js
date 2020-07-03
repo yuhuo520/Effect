@@ -55,7 +55,7 @@ window.onload = function () {
                             var d = flyData[index] || flyData[0];
                             oAlert.index = index;
                             oATitle.innerHTML = "课题：" + d.title;
-                            oAImg.src = "src/" + d.src + "/index.png";
+                            oAImg.src = d.src;
                             oAAuthor.innerHTML = "主讲老师：" + d.author;
                             oAInfo.innerHTML = "描述：" + d.dec;
                             show();
@@ -97,7 +97,7 @@ window.onload = function () {
                         }else{
                             requestAnimationFrame(m);
                         }
-                        oAlert.style.transform = "rotateY(0deg) scale("+((1-2)*prop+2)+")";
+                        oAlert.style.transform = "rotateY(0deg) scale("+(2-prop)+")";
                         oAlert.style.opacity = prop;
                     }
                     requestAnimationFrame(m);
@@ -366,16 +366,3 @@ window.onload = function () {
 /*var oDiv = document.createElement("div");
 oDiv.style.cssText = "background:pink; position:absolute; width:5px; height:5px; border-radius:100%; top:"+e.clientY+"px; left:"+e.clientX+"px;";
 document.body.appendChild(oDiv);*/
-
-
-
-
-
-
-
-
-
-
-
-
-

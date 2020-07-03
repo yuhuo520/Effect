@@ -6,24 +6,21 @@ body,html{
     width: 100%;
     height: 100%;
 }
+/* 容器 */
 #all{
-    width: 400%;
+    width: 100%;
     height: 100%;
-    margin-left: 0;
     transition: 1s;
 }
-#all.left{
-    margin-left: -100%;
-}
 #main{
-    float: left;
     position: relative;
-    width: 25%;
+    width: 100%;
     height: 100%;
     background: #023b3b url("../img/bg.png") center center;
     perspective: 800px;
 }
 
+/* 中间变换的列表 */
 #list ul{
     position: absolute;
     top: 50%;
@@ -78,6 +75,8 @@ body,html{
     font-size: 14px;
     text-shadow: 0 0 5px rgba(0,255,255,0.5);
 }
+
+/* 底部切换按钮 */
 #btn{
     position: absolute;
     left: 20px;
@@ -101,6 +100,8 @@ body,html{
 #btn ul li:hover{
     background: rgba(0,127,127,0.8);
 }
+
+/* 弹窗 */
 #alert{
     display: none;
     position: absolute;
@@ -148,7 +149,7 @@ body,html{
     height: 50%;
 }
 #alert .img img{
-    width: 100%;
+    height: 100%;
 }
 #alert .author{
     position: absolute;
@@ -204,15 +205,4 @@ body,html{
 #back:hover{
     background: rgba(0,127,127,0.8);
 }
-
-
-
-
-
-
-
-
-
-
-
 
