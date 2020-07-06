@@ -23,10 +23,10 @@
 			<!--左下角按钮-->
 			<div id="btn">
 				<ul>
-					<li @click="toTable()">表格</li>
-					<li @click="toSphere()">球体</li>
-					<li @click="toHelix()">螺旋</li>
-					<li @click="toGrid()">层叠</li>
+					<li @click="changeShape('table')">表格</li>
+					<li @click="changeShape('sphere')">球体</li>
+					<li @click="changeShape('helix')">螺旋</li>
+					<li @click="changeShape('grid')">层叠</li>
 				</ul>
 			</div>
 			<!--li点击后的弹出层-->
@@ -40,8 +40,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 		
-		<script src="js/data.js"></script>
-        <script src="js/index2.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
 
