@@ -5,16 +5,21 @@
 <meta charset="UTF-8">
 <title>Floating heart</title>
 
-
-
-<link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
 
   <style>
+  html, body {
+	width: 100%;
+	height: 100%; 
+	margin: 0;
+	background: #270F34; 
+	overflow: hidden; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center
+  }
   css-doodle {
     --color: @p(#51eaea, #fffde1, #ff9d76, #FB3569);
       
@@ -67,9 +72,7 @@
 
 <css-doodle use="var(--rule)"></css-doodle>
 
-<script src='js/css-doodle.min.js'></script>
-
-  
+<script src="https://cdn.bootcdn.net/ajax/libs/css-doodle/0.8.5/css-doodle.min.js"></script>
 
 </body>
 
